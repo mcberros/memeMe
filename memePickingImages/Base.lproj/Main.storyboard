@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -251,6 +252,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R8w-cV-0Ty" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4131" y="294"/>
+        </scene>
+        <!--MemeDetailViewController-->
+        <scene sceneID="wzO-o1-xwL">
+            <objects>
+                <viewController title="MemeDetailViewController" id="aXG-SC-nzG" customClass="MemeDetailViewController" customModule="memePickingImages" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g6P-0d-2Dw"/>
+                        <viewControllerLayoutGuide type="bottom" id="XfL-dO-2i5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bww-S1-Y5I">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ynT-vo-Ryw">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ynT-vo-Ryw" firstAttribute="leading" secondItem="bww-S1-Y5I" secondAttribute="leadingMargin" constant="-20" id="DTa-7i-adf"/>
+                            <constraint firstItem="ynT-vo-Ryw" firstAttribute="top" secondItem="bww-S1-Y5I" secondAttribute="topMargin" id="Oct-FR-CYs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ynT-vo-Ryw" secondAttribute="trailing" constant="-20" id="hy0-I6-2GM"/>
+                            <constraint firstItem="XfL-dO-2i5" firstAttribute="top" secondItem="ynT-vo-Ryw" secondAttribute="bottom" id="rhz-fQ-pQw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="memeImageView" destination="ynT-vo-Ryw" id="dBp-ub-95G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ed6-0R-BPO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4127" y="988"/>
         </scene>
     </scenes>
     <resources>
