@@ -256,7 +256,7 @@
         <!--MemeDetailViewController-->
         <scene sceneID="wzO-o1-xwL">
             <objects>
-                <viewController title="MemeDetailViewController" id="aXG-SC-nzG" customClass="MemeDetailViewController" customModule="memePickingImages" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MemeDetailViewController" title="MemeDetailViewController" id="aXG-SC-nzG" customClass="MemeDetailViewController" customModule="memePickingImages" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="g6P-0d-2Dw"/>
                         <viewControllerLayoutGuide type="bottom" id="XfL-dO-2i5"/>
@@ -266,15 +266,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ynT-vo-Ryw">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="50" y="46" width="469" height="494"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ynT-vo-Ryw" firstAttribute="leading" secondItem="bww-S1-Y5I" secondAttribute="leadingMargin" constant="-20" id="DTa-7i-adf"/>
-                            <constraint firstItem="ynT-vo-Ryw" firstAttribute="top" secondItem="bww-S1-Y5I" secondAttribute="topMargin" id="Oct-FR-CYs"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ynT-vo-Ryw" secondAttribute="trailing" constant="-20" id="hy0-I6-2GM"/>
-                            <constraint firstItem="XfL-dO-2i5" firstAttribute="top" secondItem="ynT-vo-Ryw" secondAttribute="bottom" id="rhz-fQ-pQw"/>
+                            <constraint firstItem="ynT-vo-Ryw" firstAttribute="leading" secondItem="bww-S1-Y5I" secondAttribute="leadingMargin" constant="30" id="Anw-rn-MXK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ynT-vo-Ryw" secondAttribute="trailing" constant="61" id="JV3-Cc-Cyf"/>
+                            <constraint firstItem="XfL-dO-2i5" firstAttribute="top" secondItem="ynT-vo-Ryw" secondAttribute="bottom" constant="60" id="My2-rw-hCt"/>
+                            <constraint firstItem="ynT-vo-Ryw" firstAttribute="top" secondItem="g6P-0d-2Dw" secondAttribute="bottom" constant="26" id="T0j-X8-RWQ"/>
                         </constraints>
                     </view>
                     <connections>
