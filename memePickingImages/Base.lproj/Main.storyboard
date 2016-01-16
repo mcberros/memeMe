@@ -83,7 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1192" y="380"/>
+            <point key="canvasLocation" x="4943" y="294"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ujv-ru-cwv">
@@ -165,30 +165,30 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="E3s-Wv-zNk" kind="relationship" relationship="rootViewController" id="yOd-H1-C4e"/>
+                        <segue destination="Oxw-C7-dNT" kind="relationship" relationship="rootViewController" id="wiQ-VB-jU3"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UIP-NC-W5d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2692" y="-139"/>
         </scene>
-        <!--SentMemesTableViewController-->
-        <scene sceneID="fyu-zj-t1u">
+        <!--Sent Memes Table View Controller-->
+        <scene sceneID="rBD-k8-PRV">
             <objects>
-                <tableViewController title="SentMemesTableViewController" id="E3s-Wv-zNk" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="yVc-Vc-x8O" customClass="SentMemesTableViewController" customModule="memePickingImages" customModuleProvider="target">
+                <tableViewController id="Oxw-C7-dNT" customClass="SentMemesTableViewController" customModule="memePickingImages" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="mJ4-AR-Afu">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SentMemeTableCell" textLabel="Foh-oG-N99" style="IBUITableViewCellStyleDefault" id="fiB-qF-gFp">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SentMemeTableCell" textLabel="sIM-Jb-Yfi" style="IBUITableViewCellStyleDefault" id="UTb-HU-fRA">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fiB-qF-gFp" id="3DP-rP-zGE">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UTb-HU-fRA" id="zEM-lU-AwJ">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Foh-oG-N99">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sIM-Jb-Yfi">
                                             <rect key="frame" x="15" y="0.0" width="570" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -200,17 +200,15 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="E3s-Wv-zNk" id="eSp-w8-fSD"/>
-                            <outlet property="delegate" destination="E3s-Wv-zNk" id="bSd-lM-9pY"/>
+                            <outlet property="dataSource" destination="Oxw-C7-dNT" id="hDC-1X-zRm"/>
+                            <outlet property="delegate" destination="Oxw-C7-dNT" id="4l8-ww-TZd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Sent Memes" id="SL9-hd-Mux">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="CX3-Ux-bx3"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="b4v-nb-kRX"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dIE-gS-bgg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8xC-ha-gmD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3388" y="-139"/>
+            <point key="canvasLocation" x="3362" y="-139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="P51-J1-VW6">
@@ -232,7 +230,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R8w-cV-0Ty" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="380" y="380"/>
+            <point key="canvasLocation" x="4131" y="294"/>
         </scene>
     </scenes>
     <resources>

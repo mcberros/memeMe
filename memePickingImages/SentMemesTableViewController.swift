@@ -8,27 +8,36 @@
 
 import UIKit
 
-class SentMemesTableViewController: UITableView {
+class SentMemesTableViewController: UITableViewController {
 
-    var memes: [Meme] {
-        return (UIApplication.sharedApplication().delegate as! AppDelegate).memes
+    var memes = [Meme]()
+
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+
+        let object = UIApplication.sharedApplication().delegate
+        let appDelegate = object as! AppDelegate
+        memes = appDelegate.memes
+
+        tableView.reloadData()
     }
 
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return memes.count
     }
 
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("SentMemeTableCell")!
+
         let sentMeme = memes[indexPath.row]
 
         cell.textLabel?.text = sentMeme.topText
         cell.imageView?.image = sentMeme.memedImage
         return cell
     }
-
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-
-    }
+//
+//    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//
+//    }
 
 }
