@@ -149,7 +149,13 @@
                             <outlet property="delegate" destination="r4T-aB-HkY" id="fEx-Oi-RNe"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Sent Memes" id="QUw-es-n1X"/>
+                    <navigationItem key="navigationItem" title="Sent Memes" id="QUw-es-n1X">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="i5u-lm-TP9">
+                            <connections>
+                                <segue destination="9w9-eA-ewA" kind="show" id="jKY-Wn-h3b"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dLh-07-sht" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -243,4 +249,7 @@
         <image name="collection" width="30" height="30"/>
         <image name="table" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="jKY-Wn-h3b"/>
+    </inferredMetricsTieBreakers>
 </document>
