@@ -204,7 +204,13 @@
                             <outlet property="delegate" destination="Oxw-C7-dNT" id="4l8-ww-TZd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="b4v-nb-kRX"/>
+                    <navigationItem key="navigationItem" id="b4v-nb-kRX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="E2J-5n-hJK">
+                            <connections>
+                                <segue destination="9w9-eA-ewA" kind="show" id="Gv3-tx-doc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8xC-ha-gmD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
