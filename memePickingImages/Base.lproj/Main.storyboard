@@ -138,10 +138,10 @@
             </objects>
             <point key="canvasLocation" x="2692" y="-139"/>
         </scene>
-        <!--Sent Memes Table View Controller-->
+        <!--Sent Memes-->
         <scene sceneID="rBD-k8-PRV">
             <objects>
-                <tableViewController id="Oxw-C7-dNT" customClass="SentMemesTableViewController" customModule="memePickingImages" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Sent Memes" id="Oxw-C7-dNT" customClass="SentMemesTableViewController" customModule="memePickingImages" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="mJ4-AR-Afu">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -170,7 +170,7 @@
                             <outlet property="delegate" destination="Oxw-C7-dNT" id="4l8-ww-TZd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="b4v-nb-kRX">
+                    <navigationItem key="navigationItem" title="Sent Memes" id="b4v-nb-kRX">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="E2J-5n-hJK">
                             <connections>
                                 <segue destination="9w9-eA-ewA" kind="show" id="Gv3-tx-doc"/>
@@ -265,8 +265,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ynT-vo-Ryw">
-                                <rect key="frame" x="50" y="46" width="469" height="494"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ynT-vo-Ryw">
+                                <rect key="frame" x="50" y="130" width="469" height="410"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -277,13 +277,17 @@
                             <constraint firstItem="ynT-vo-Ryw" firstAttribute="top" secondItem="g6P-0d-2Dw" secondAttribute="bottom" constant="26" id="T0j-X8-RWQ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="8p7-xb-kmo">
+                        <barButtonItem key="backBarButtonItem" title="Sent Memes" id="JW0-6M-tUH"/>
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="mDi-iz-byS"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="memeImageView" destination="ynT-vo-Ryw" id="dBp-ub-95G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ed6-0R-BPO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4127" y="988"/>
+            <point key="canvasLocation" x="4131" y="1000"/>
         </scene>
     </scenes>
     <resources>
@@ -291,6 +295,6 @@
         <image name="table" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="CyA-3W-XLk"/>
+        <segue reference="Gv3-tx-doc"/>
     </inferredMetricsTieBreakers>
 </document>
