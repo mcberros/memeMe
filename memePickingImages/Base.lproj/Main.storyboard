@@ -92,7 +92,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="ujv-ru-cwv">
             <objects>
-                <tabBarController id="Nwf-qi-15Z" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" id="Nwf-qi-15Z" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="ha6-rV-xDC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -282,7 +282,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="8p7-xb-kmo">
                         <barButtonItem key="backBarButtonItem" title="Sent Memes" id="JW0-6M-tUH"/>
-                        <barButtonItem key="rightBarButtonItem" title="Edit" id="mDi-iz-byS"/>
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="mDi-iz-byS">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="ZOI-GD-5ig"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="memeImageView" destination="ynT-vo-Ryw" id="dBp-ub-95G"/>
@@ -290,7 +294,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ed6-0R-BPO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4131" y="1000"/>
+            <point key="canvasLocation" x="4131" y="1026"/>
         </scene>
     </scenes>
     <resources>
@@ -298,6 +302,7 @@
         <image name="table" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Gv3-tx-doc"/>
+        <segue reference="CyA-3W-XLk"/>
+        <segue reference="ZOI-GD-5ig"/>
     </inferredMetricsTieBreakers>
 </document>
