@@ -75,8 +75,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
     @IBAction func cancelAction(sender: AnyObject) {
         if memeToEdit != nil {
-            let controller = self.storyboard!.instantiateViewControllerWithIdentifier("TabBarController") as! UIViewController
-            self.presentViewController(controller, animated: true, completion: nil)
+            let controller = storyboard!.instantiateViewControllerWithIdentifier("TabBarController") as! UIViewController
+            presentViewController(controller, animated: true, completion: nil)
         } else {
             dismissViewControllerAnimated(true, completion: nil)
         }
