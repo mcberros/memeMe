@@ -282,11 +282,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="8p7-xb-kmo">
                         <barButtonItem key="backBarButtonItem" title="Sent Memes" id="JW0-6M-tUH"/>
-                        <barButtonItem key="rightBarButtonItem" title="Edit" id="mDi-iz-byS">
-                            <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="ZOI-GD-5ig"/>
-                            </connections>
-                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="memeImageView" destination="ynT-vo-Ryw" id="dBp-ub-95G"/>
@@ -303,6 +298,5 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="CyA-3W-XLk"/>
-        <segue reference="ZOI-GD-5ig"/>
     </inferredMetricsTieBreakers>
 </document>

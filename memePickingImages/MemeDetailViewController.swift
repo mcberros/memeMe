@@ -25,10 +25,4 @@ class MemeDetailViewController: UIViewController {
         super.viewWillDisappear(animated)
         tabBarController?.tabBar.hidden = false
     }
-
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let memeEditorVC = segue.destinationViewController as! ViewController
-
-        memeEditorVC.memeToEdit = meme.memedImage
-    }
 }

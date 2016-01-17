@@ -17,8 +17,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var bottonText: UITextField!
     @IBOutlet weak var shareAction: UIBarButtonItem!
 
-    var memeToEdit: UIImage!
-
     private let memeTextAttributes = [
         NSStrokeColorAttributeName: UIColor.blackColor(),
         NSForegroundColorAttributeName: UIColor.whiteColor(),
@@ -43,11 +41,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         subscribeToKeyboardNotifications()
         UIApplication.sharedApplication().statusBarHidden = true
 
-        if let meme = memeToEdit {
-            imagePickerView.image = meme
-        } else {
-            shareAction.enabled = false
-        }
+        shareAction.enabled = false
     }
 
     override func viewWillDisappear(animated: Bool) {
@@ -74,12 +68,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
 
     @IBAction func cancelAction(sender: AnyObject) {
-        if memeToEdit != nil {
-            let controller = storyboard!.instantiateViewControllerWithIdentifier("TabBarController") as! UIViewController
-            presentViewController(controller, animated: true, completion: nil)
-        } else {
-            dismissViewControllerAnimated(true, completion: nil)
-        }
+        dismissViewControllerAnimated(true, completion: nil)
     }
 
     func imagePickerController(picker: UIImagePickerController,
