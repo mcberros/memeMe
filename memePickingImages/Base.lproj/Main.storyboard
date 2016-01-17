@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -269,16 +268,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ynT-vo-Ryw">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ynT-vo-Ryw">
                                 <rect key="frame" x="50" y="28" width="497" height="564"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ynT-vo-Ryw" firstAttribute="centerX" secondItem="bww-S1-Y5I" secondAttribute="centerX" id="95L-Q8-qq0"/>
                             <constraint firstItem="XfL-dO-2i5" firstAttribute="top" secondItem="ynT-vo-Ryw" secondAttribute="bottom" constant="8" id="SeO-En-i2h"/>
                             <constraint firstItem="ynT-vo-Ryw" firstAttribute="top" secondItem="g6P-0d-2Dw" secondAttribute="bottom" constant="8" id="YPH-yz-ywy"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ynT-vo-Ryw" secondAttribute="trailing" constant="33" id="dtT-Dd-Tnh"/>
-                            <constraint firstItem="ynT-vo-Ryw" firstAttribute="leading" secondItem="bww-S1-Y5I" secondAttribute="leadingMargin" constant="30" id="fqi-MI-qWb"/>
+                            <constraint firstItem="ynT-vo-Ryw" firstAttribute="width" secondItem="bww-S1-Y5I" secondAttribute="width" id="w4D-8a-3af"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8p7-xb-kmo">
