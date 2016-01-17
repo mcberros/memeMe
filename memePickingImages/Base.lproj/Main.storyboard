@@ -72,7 +72,11 @@
                                 <action selector="startActivityView:" destination="BYZ-38-t0r" id="mhK-3z-Xyu"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="Cancel" id="Pvg-sf-dyN"/>
+                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="Pvg-sf-dyN">
+                            <connections>
+                                <action selector="cancelAction:" destination="BYZ-38-t0r" id="Upi-wI-h1S"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="bottonText" destination="Blx-TW-8Jw" id="D9g-Rj-T2u"/>
