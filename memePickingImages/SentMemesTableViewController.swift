@@ -10,7 +10,7 @@ import UIKit
 
 class SentMemesTableViewController: UITableViewController {
 
-    var memes = [Meme]()
+    private var memes = [Meme]()
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
