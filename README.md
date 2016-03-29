@@ -1,5 +1,4 @@
 # memeMe
-
 Application for [Udacity iOS Developer Nanodegree](https://www.udacity.com/course/ios-developer-nanodegree--nd003)
 
 This application enables a user to take a picture, and add text at the top and bottom to form a meme. 
